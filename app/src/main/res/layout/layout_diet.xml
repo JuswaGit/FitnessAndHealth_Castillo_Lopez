@@ -7,6 +7,45 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLayout">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/carbs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/protein" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/TitleLayout"
         android:layout_width="255dp"
         android:layout_height="47dp"
@@ -24,7 +63,7 @@
             android:layout_width="253dp"
             android:layout_height="54dp"
             android:fontFamily="casual"
-            android:text="Fitness Exercises"
+            android:text="Diet"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="25sp"
@@ -48,7 +87,7 @@
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/heart" />
+            app:srcCompat="@drawable/diet" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,7 +95,7 @@
         android:layout_height="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -67,8 +106,9 @@
             android:id="@+id/textView4"
             android:layout_width="237dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
             android:fontFamily="casual"
-            android:text="Sample Workout"
+            android:text="Guide"
             android:textColor="@android:color/holo_green_dark"
             android:textSize="22sp"
             android:textStyle="bold" />

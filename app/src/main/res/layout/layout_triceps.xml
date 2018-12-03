@@ -7,6 +7,25 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLayout">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/triceps_exers" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/TitleLayout"
         android:layout_width="255dp"
         android:layout_height="47dp"
@@ -24,55 +43,11 @@
             android:layout_width="253dp"
             android:layout_height="54dp"
             android:fontFamily="casual"
-            android:text="Fitness Exercises"
+            android:text="Triceps"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="25sp"
             android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/heartLayout"
-        android:layout_width="86dp"
-        android:layout_height="72dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/heart" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="194dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleLayout">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="237dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="casual"
-            android:text="Sample Workout"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -97,7 +72,7 @@
             android:background="@android:color/holo_green_dark"
             android:fontFamily="casual"
             android:shadowColor="@android:color/black"
-            android:text="Back to Main Menu"
+            android:text="Go Back"
             android:textAlignment="inherit"
             android:textColor="@android:color/white"
             android:textSize="17sp"
@@ -109,7 +84,26 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lessthanLayout"
+        android:id="@+id/heartLayout"
+        android:layout_width="86dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/triceps" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="64dp"
         android:layout_height="41dp"
         android:layout_marginBottom="16dp"
@@ -118,18 +112,17 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/backButtonLayout"
         app:layout_constraintEnd_toEndOf="@+id/backButtonLayout"
-        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="@+id/backButtonLayout">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textView7"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:fontFamily="casual"
             android:text="<"
             android:textColor="@android:color/white"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+            android:textSize="35sp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

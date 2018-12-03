@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/TitleLayout"
         android:layout_width="255dp"
         android:layout_height="47dp"
         android:layout_marginEnd="8dp"
@@ -32,6 +32,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/dumbellLayout"
         android:layout_width="86dp"
         android:layout_height="72dp"
         android:layout_marginEnd="8dp"
@@ -51,7 +52,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout9"
+        android:id="@+id/backButtonLayout"
         android:layout_width="265dp"
         android:layout_height="70dp"
         android:layout_marginBottom="88dp"
@@ -84,16 +85,17 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lessthanLayout"
         android:layout_width="49dp"
         android:layout_height="51dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="@+id/backButtonLayout"
         app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout9"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout9">
+        app:layout_constraintStart_toStartOf="@+id/backButtonLayout"
+        app:layout_constraintTop_toTopOf="@+id/backButtonLayout">
 
         <TextView
             android:id="@+id/textView10"
@@ -107,10 +109,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/chestLayout"
         android:layout_width="215dp"
         android:layout_height="212dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="4dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView7"
@@ -133,27 +138,165 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="152dp"
-        android:layout_height="144dp"
+        android:id="@+id/backLayout"
+        android:layout_width="195dp"
+        android:layout_height="216dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="75dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chestLayout"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="133dp"
-            android:layout_height="108dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="112dp"
+            android:layout_width="86dp"
+            android:layout_height="93dp"
+            android:layout_marginLeft="52dp"
             android:layout_marginTop="88dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView7"
-            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:text="Back"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shouldersLayout"
+        android:layout_width="216dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chestLayout">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="86dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="52dp"
+            app:srcCompat="@drawable/shoulder" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Shoulders"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tricepsLayout"
+        android:layout_width="190dp"
+        android:layout_height="122dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backLayout">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="86dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="52dp"
+            app:srcCompat="@drawable/triceps" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="Triceps"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bicepsLayout"
+        android:layout_width="216dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="176dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shouldersLayout">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="86dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="52dp"
+            app:srcCompat="@drawable/biceps" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:text="Biceps"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/legsLayout"
+        android:layout_width="196dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="156dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tricepsLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="86dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="52dp"
+            app:srcCompat="@drawable/legs" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:text="Legs"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
